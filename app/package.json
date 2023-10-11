@@ -1,0 +1,21 @@
+{
+  "name": "app",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "pages:dev": "wrangler pages dev --compatibility-date=2023-10-11 -- astro dev",
+    "pages:deploy": "astro build && wrangler pages deploy ./dist"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^7.5.2",
+    "astro": "^3.2.4"
+  },
+  "devDependencies": {
+    "wrangler": "^3.11.0"
+  }
+}
